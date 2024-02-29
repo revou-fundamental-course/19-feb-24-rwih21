@@ -1,4 +1,18 @@
 
+// User Name
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the welcome message element
+    const welcomeMessage = document.getElementById('welcome-message');
+
+    // Get the username
+    const userName = prompt("Please enter your name:");
+
+    // Update the welcome message with username
+    if (userName) {
+        welcomeMessage.textContent = `Hi ${userName}, Welcome To Our Website`;
+    }
+});
+
 
 // Form Logic Function
 document.addEventListener("DOMContentLoaded", function() {
@@ -14,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Construct message information
         let message = `<strong>Current Time:</strong> ${currentTime}<br><br>`;
+
         // Get form data
         const formData = new FormData(form);
         
